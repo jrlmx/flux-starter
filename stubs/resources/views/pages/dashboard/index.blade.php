@@ -10,6 +10,6 @@ middleware(['auth', 'verified']);
 ?>
 
 
-<x-layouts.app>
-    <h1>Dashboard</h1>
+<x-layouts.app pg_title="Dashboard">
+    <flux:heading size="lg" level="1">Dashboard</flux:heading>
 </x-layouts.app>

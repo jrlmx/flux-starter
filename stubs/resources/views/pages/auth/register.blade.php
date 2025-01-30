@@ -59,8 +59,8 @@ $register = function () {
         </div>
     @endvolt
 
-    <flux:subheading class="text-center">
+    <p class="text-center text-sm">
         Already have an account?
         <flux:link href="{{ route('login') }}">Sign in</flux:link>
-    </flux:subheading>
+    </p>
 </x-layouts.auth>
