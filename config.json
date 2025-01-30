@@ -1,6 +1,6 @@
 {
     "$schema": "../../config-schema.json",
-    "template": "",
+    "flags": ["--no-interaction", "--pest", "--database=sqlite"],
     "remove_files": ["resources/views/welcome.blade.php"],
     "composer": {
         "production": ["laravel/folio", "livewire/livewire", "livewire/volt", "livewire/flux", "livewire/flux-pro"],
@@ -21,5 +21,5 @@
     },
     "npx_commands": [],
     "artisan_commands": ["folio:install", "volt:install"],
-    "commands": ["git init", "git add .", "git commit -m \"initial\"", "./vendor/bin/pint"]
+    "commands": ["quiet:git init", "quiet:git add .", "quiet:git commit -m \"initial\"", "quiet:./vendor/bin/pint"]
 }
